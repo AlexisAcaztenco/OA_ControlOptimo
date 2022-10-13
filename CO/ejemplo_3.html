@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Ejemplo 3 | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-38"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="ejemplos.html" class="current-page-parent daddy">Ejemplos</a>
+   <ul>
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li id="active"><a href="ejemplo_3.html" class="active no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li><a href="prcticas.html" class="daddy">Prácticas</a>
+   <ul class="other-section">
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prcticas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejemplo 3</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id33">
+<div class="iDevice emphasis0" >
+<div id="ta33_113_2" class="block iDevice_content">
+<div class="exe-text"><table border="0" style="height: 71px; width: 100%; background-color: #ebf0fa;">
+<tbody>
+<tr style="height: 61px;">
+<td style="width: 100%; height: 61px;">
+<h2 style="text-align: center;"><span style="color: #339966; font-family: 'Encode Sans', Arial, Helvetica, sans-serif; font-size: 18pt;"><span style="letter-spacing: normal;">Ejemplo en Python</span></span></h2>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 100%; height: 10px;">
+<p></p>
+<div class="exe-fx exe-accordion">
+<h2><span style="font-family: arial, helvetica, sans-serif; color: #ffffff; font-size: 12pt;"><span style="letter-spacing: normal;">Descripción</span></span></h2>
+<p><span style="font-size: 14pt;">Simulación de un tanque de sistema dinámico usando Python</span></p>
+<h2><span style="font-family: arial, helvetica, sans-serif; color: #ffffff; font-size: 12pt;"><span style="letter-spacing: normal;">Requisitos de Ejecución</span></span></h2>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Para la ejecución de este código es necesario instalar lo siguiente:</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;"><span style="color: #333333;">Python</span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;"><span style="color: #333333;">Librerías</span></span></li>
+</ul>
+<h1 style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Instalando Python</span></span></h1>
+<table border="0" style="height: 10px; width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr style="height: 10px;">
+<td style="width: 50%; height: 10px;">
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Debes descargar el instalador de python desde su página oficial: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Da Click en el botón: Download Python</span></p>
+</td>
+<td style="width: 50%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="background-color: #f7f7f7; font-size: 16.8px;"><img src="img1.8.png" width="587" height="289" alt="Python" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Busca el archivo que se descargó y da doble click</span></span></p>
+</td>
+<td style="width: 50%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img2.9.png" width="587" height="330" alt="Python carpeta" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Saldrá la siguiente ventana Verifica que la casilla de add python to path esté seleccionada y da click en install now</span></span></p>
+</td>
+<td style="width: 50%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img6.5.png" width="578" height="355" alt="instalando" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Espera a que termine de instalar</span></span></p>
+</td>
+<td style="width: 50%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img7.5.png" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Y listo ya está instalado Python.</span></span></p>
+</td>
+<td style="width: 50%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img8.5.png" width="578" height="363" alt="Listo" /></span></span></td>
+</tr>
+</tbody>
+</table>
+<h1 style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Instalando Librerías</span></span></h1>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Las librerías necesarias para la ejecución de este código son las siguientes:</span></span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><span style="color: #333333;">numpy</span></span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><span style="color: #333333;">Spicy</span></span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><span style="color: #333333;">mathplothlib</span></span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><span style="color: #333333;">pyplob</span></span></span></li>
+</ul>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Será necesario entrar en CMD, para ello presiona <img src="https://sospedia.net/wp-content/uploads/2018/04/winwdos-mas-r.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="Ver la clave o licencia de tu Windows – sospedia" data-noaft="1" width="76" height="39" /> para poder entrar y a continuación escribe cmd en la casilla de abrir como en la imagen de la derecha.</span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> <br /></span></span></p>
+</td>
+<td style="width: 51.3622%;"><span style="font-family: arial, helvetica, sans-serif;"><img src="img4.6.png" width="415" height="208" alt="CMD" style="display: block; margin-left: auto; margin-right: auto;" /></span></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">Se abrirá una pantalla color negro y deberás escribir el siguiente comando:</span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">pip install numpy</span></span></p>
+</td>
+<td style="width: 51.3622%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img9.5.png" width="594" height="371" alt="numpy" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">A continuación:</span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">pip install matplotlib</span></span></p>
+</td>
+<td style="width: 51.3622%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> <img src="img9.6.png" width="575" height="323" alt="matplotlib" /></span></span></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">pip install spicy</span></span></p>
+</td>
+<td style="width: 51.3622%;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"><img src="img10.5.png" width="575" height="323" alt="" /></span></span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<h2><span style="font-family: arial, helvetica, sans-serif; color: #ffffff; font-size: 12pt;"><span style="letter-spacing: normal;">Codificación</span></span></h2>
+<p><span style="font-family: arial, helvetica, sans-serif; color: #ffffff; font-size: 18pt;"><span style="letter-spacing: normal;"></span></span></p>
+<table border="0" style="width: 100%; background-color: #262a33;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="font-size: 13.44px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><span style="color: #999999;"> # -*- coding: utf-8 -*-</span><br /><span style="color: #00ff00;">"""</span><br /><span style="color: #00ff00;">Spyder Editor</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ff00;">This is a temporary script file.</span><br /><span style="color: #00ff00;">"""</span><br /><span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">numpy</span> <span style="color: #ff00ff;">as</span> <span style="color: #ffffff;">np</span><br /><span style="color: #ff00ff;">from</span> <span style="color: #ffffff;">scipy.integrate</span> <span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">odeint</span><br /><span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">matplotlib.pyplot</span> <span style="color: #ff00ff;">as</span> <span style="color: #ffffff;">plt</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ff00ff;">def</span> <span style="color: #00ffff;">tank</span><span style="color: #ffffff;">(h,t):</span><br /><span style="color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"> </span> </span>F0 =</span> <span style="color: #ffff00;">1.1                    <span style="color: #999999;">  # m**3/min</span></span><br /><span style="color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"> </span> </span>A   =</span> <span style="color: #ffff00;">1                    <span style="color: #999999;"># m**2</span></span><br /><span style="color: #ffffff;"><span style="white-space: pre;"> <span style="white-space: pre;"> </span></span>alfa =</span><span style="color: #ffffff;"> </span><span style="color: #ffff00;">0.5</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;"><span style="white-space: pre;"> <span style="white-space: pre;"> </span></span>dhdt = F0/A - alfa/A*np.<span style="color: #00ccff;">sqrt</span>(h)       </span>                            <span style="color: #999999;">  #metros/minutos</span><br /><span style="color: #ff00ff;"><span style="white-space: pre;"> <span style="white-space: pre;"> </span></span>return</span> <span style="color: #ffffff;">dhdt</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ccff;"><span style="color: #ff00ff;">def </span><span style="color: #99cc00;"><span style="color: #00ffff;">tank_lin</span><span style="color: #ffffff;">(h_lin,t):</span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ccff;"><span style="color: #99cc00;"><span style="color: #ffffff;"><span style="white-space: pre;"> Fss = <span style="color: #ffff00;">1 </span><span style="color: #999999;"> # m**3/min</span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ccff;"><span style="color: #99cc00;"><span style="color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"> F_lin = F - Fss</span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ccff;"><span style="color: #99cc00;"><span style="color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> hss =<span style="color: #ffff00;"> 4</span></span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #00ccff;"><span style="color: #99cc00;"><span style="color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> A = <span style="color: #ffff00;">1 </span></span> <span style="white-space: pre; color: #999999;"># m**2</span></span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> alfa = <span style="color: #ffff00;">0.5</span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> k = <span style="color: #ffff00;">2</span>*np.<span style="color: #00ccff;">sqrt</span>(hss)/alfa</span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> tau = <span style="color: #ffff00;">2</span>*A*np.<span style="color: #00ccff;">sqr</span>t(hss)/alfa</span></span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"><span style="white-space: pre;"> dhlindt = k/tau*F_lin - 1/tau*h_lin <span style="color: #999999;">#m/min</span></span></span></span></span></span></span></span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="color: #ff00ff;"> return</span> dhlindt</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;">F = <span style="color: #ffff00;">1.1</span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;"><span style="white-space: pre;"><span style="white-space: pre;"> </span><span style="color: #999999;">#Sistema no lineal</span></span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">                                                                                          <span style="color: #999999;">#Vector de tiempo</span><br /><span style="color: #ffffff;">t = np.linspace(</span><span style="color: #ffff00;">0, 50</span><span style="color: #ffffff;">)</span></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">                                                                                         <span style="color: #999999;">#condiciones de entrada</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">h0 =</span> <span style="color: #ffff00;">4</span></span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">h= <span style="color: #00ccff;">odeint</span>(tank, h0, t)</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #999999;"><span style="white-space: pre;"> </span>#Sistema linealizado</span> </span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;"> h0_lin = 0 </span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;">h_lin = <span style="color: #00ccff;">odeint</span>(tank_lin,h0_lin,t)  </span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #ffffff;">h_lin = h_lin + <span style="color: #ffff00;">4</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">                                           <span style="color: #999999;">#Generar figura</span></span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">plt.<span style="color: #00ccff;">plot</span>(t,h,h_lin)</span></span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">plt.<span style="color: #00ccff;">xlabel</span>(</span><span style="color: #00ff00;">'tiempo, [minutos]'</span><span style="color: #ffffff;">)</span></span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">plt.<span style="color: #00ccff;">ylabel</span>(</span><span style="color: #00ff00;">'altura del tanque, [m'</span><span style="color: #ffffff;">)</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #ffffff;">plt.<span style="color: #00ccff;">show</span>()</span></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 100%;">
+<p style="font-size: 13.44px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><span style="color: #999999;"> </span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;">                                                                                           </span></span></p>
+<h2><span style="font-family: arial, helvetica, sans-serif; color: #ffffff; font-size: 12pt;"><span style="letter-spacing: normal;">Ejecución</span></span></h2>
+<table border="0" style="width: 99.0663%; background-color: #ebf0fa;" height="648">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><strong><span style="font-size: 16.8px; font-family: arial, helvetica, sans-serif;">Este es el resultado de la ejecución</span></strong></p>
+<p><span style="font-size: 16.8px; font-family: arial, helvetica, sans-serif;"></span></p>
+<p><img src="img10.6.png" width="1188" height="668" alt="Ejecución" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+</div>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: Encode Sans, Arial, Helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: Encode Sans, Arial, Helvetica, sans-serif;"><span style="font-size: 16.8px;"> </span></span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prcticas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

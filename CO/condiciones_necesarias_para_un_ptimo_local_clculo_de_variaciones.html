@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones). | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li class="current-page-parent"><a href="desarrollo.html" class="current-page-parent daddy">Desarrollo</a>
+   <ul>
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li class="current-page-parent"><a href="unidad_1.html" class="current-page-parent daddy">Unidad 1</a>
+      <ul>
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li id="active"><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="active no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li><a href="prcticas.html" class="daddy">Prácticas</a>
+   <ul class="other-section">
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="control_admisible.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_dinmica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id14">
+<div class="iDevice emphasis0" >
+<div id="ta14_112_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-carousel">
+<h2>Problema</h2>
+<p><span style="font-size: 18pt;">Nuestro problema es determinar u tal que el criterio J se minimize, esto</span><br /><span style="font-size: 18pt;">significa que con mínima energía <img src="img0.1.png" width="61" height="26" alt="(U^T Ru)" /> </span><span style="font-size: 18pt;">el sistema converga a la solución</span></p>
+<p><span style="font-size: 18pt;">trivial en tiempo  <img src="img1.1.png" width="49" height="26" alt="t&lt;=t1" /> sujeto al <a title="Sistema (1)" class="exe-dialog-link" rel="lightbox" href="#t87965aa7-880f-2eb7-dd34-1fbcb8032b3d" id="link87965aa7-880f-2eb7-dd34-1fbcb8032b3d">sistema (1).</a></span></p>
+<h2>Entonces</h2>
+<ul>
+<li><span style="font-size: 18pt;">Debemos hallar en máximo local para un índice L con respecto a u.</span></li>
+<li><span style="font-size: 18pt;">El Índice L depende de x y u, es decir L = L(x, u).</span><span style="font-size: 18pt;"></span></li>
+</ul>
+<p><span style="font-size: 18pt;"></span></p>
+<h2>Definición</h2>
+<p><span style="font-size: 18pt;">Sea u un máximo local, entonces existe un número <img src="img2.1.png" width="77" height="33" alt="E&gt;0" /> tal que</span></p>
+<p><span style="font-size: 18pt;"><img src="img3.1.png" width="273" height="56" alt="L(x, u)  &lt;= L(x, u*)" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 18pt;">para todo u admisible (funciones integrables y acotadas) tal que:</span></p>
+<p><span style="font-size: 18pt;"><img src="img4.1.png" width="446" height="68" alt="ku(t) u  (t)k &lt; ε" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</div>
+<p></p>
+<div id="t87965aa7-880f-2eb7-dd34-1fbcb8032b3d" class="exe-dialog-text js-hidden">
+<table border="0" style="width: 94.4835%; background-color: #ecfaeb;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="font-family: 'Encode Sans', Arial, Helvetica, sans-serif; font-size: 15.96px;"><span style="font-size: 14pt;">Se refiere a este sistema</span></p>
+<p style="font-family: 'Encode Sans', Arial, Helvetica, sans-serif; font-size: 15.96px;"><span style="font-size: 14pt;">x ̇(t) = f (x) + g(x)u(t), (1)</span><br /><span style="font-size: 14pt;">y (t) = x(t).</span><br /><span style="font-size: 14pt;">x(t0) = x0</span></p>
+<img src="https://www.freejpg.com.ar/asset/900/81/818c/F100010347.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="🥇 Imagen de Drone - 【FOTO GRATIS】 100010347" data-noaft="1" width="431" height="268" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Lección 1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta49_112_2" class="block iDevice_content">
+<div class="exe-text"><p><video width="720" height="480" style="display: block; margin-left: auto; margin-right: auto;" controls="controls" class="mediaelement">
+<source src="leccion1v3.mp4" type="video/mp4" /></video></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="control_admisible.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_dinmica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Ejemplo 2 | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="ejemplos.html" class="current-page-parent daddy">Ejemplos</a>
+   <ul>
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li id="active"><a href="ejemplo_2.html" class="active no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li><a href="prcticas.html" class="daddy">Prácticas</a>
+   <ul class="other-section">
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejemplo 2</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id26">
+<div class="iDevice emphasis0" >
+<div id="ta26_117_2" class="block iDevice_content">
+<div class="exe-text"><table border="0" style="height: 71px; width: 100%; background-color: #ebf0fa;">
+<tbody>
+<tr style="height: 61px;">
+<td style="width: 100%; height: 61px;">
+<h2 style="text-align: center;">Ejemplo en Python</h2>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 100%; height: 10px;">
+<p></p>
+<div class="exe-fx exe-accordion">
+<h2>Descripción</h2>
+<p><span style="font-size: 14pt;">Ejemplo de Sistema Lineal</span></p>
+<p><span style="font-size: 14pt;">Para ilustrar el uso del paquete, presentamos un ejemplo del diseño de un arquitectura de control de bucle interior/exterior para el despegue y aterrizaje vertical planar (PVTOL) ejemplo en FBS2e.</span></p>
+<p><span style="font-size: 14pt;"><img src="img12.4.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="PVTOL" data-noaft="1" width="244" height="207" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<h2>Requisitos de Ejecución</h2>
+<p><span style="font-size: 14pt;">Para la ejecución de este código es necesario instalar lo siguiente:</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 18.6667px;">Python</span></li>
+<li><span style="font-size: 18.6667px;">Librerías</span><span style="font-size: 18.6667px;"></span></li>
+</ul>
+<h1 style="text-align: center;"><span style="font-size: 18.6667px;">Instalando Python</span></h1>
+<table border="0" style="height: 10px; width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr style="height: 10px;">
+<td style="width: 50%; height: 10px;">
+<p><span style="font-size: 18.6667px;">Debes descargar el instalador de python desde su página oficial: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></span></p>
+<p><span style="font-size: 18.6667px;">Da Click en el botón: <strong>Download Python</strong></span></p>
+</td>
+<td style="width: 50%;"><span style="font-size: 18.6667px; background-color: #f7f7f7;"><img src="img1.8.png" width="587" height="289" alt="Python" /></span></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 18.6667px;">Busca el archivo que se descargó y da doble click</span></p>
+</td>
+<td style="width: 50%;"><img src="img2.9.png" width="587" height="330" alt="Python carpeta" /></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 18.6667px;">Saldrá la siguiente ventana <strong>Verifica que la casilla de add python to path esté seleccionada </strong>y da click en install now</span></p>
+</td>
+<td style="width: 50%;"><img src="img6.5.png" width="578" height="355" alt="instalando" /></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 18.6667px;">Espera a que termine de instalar</span></p>
+</td>
+<td style="width: 50%;"><img src="img7.5.png" /></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 18.6667px;">Y <strong>listo</strong> ya está instalado Python.</span></p>
+</td>
+<td style="width: 50%;"><img src="img8.5.png" width="578" height="363" alt="Listo" /></td>
+</tr>
+</tbody>
+</table>
+<h1 style="text-align: center;"><span style="font-size: 18.6667px;">Instalando Librerías</span></h1>
+<p><span style="font-size: 18.6667px;">Las librerías necesarias para la ejecución de este código son las siguientes:</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 18.6667px;">numpy</span></li>
+<li><span style="font-size: 18.6667px;">pandas</span></li>
+<li><span style="font-size: 18.6667px;">matplotlib</span></li>
+<li><span style="font-size: 18.6667px;">pyplob</span></li>
+<li><span style="font-size: 18.6667px;">control</span></li>
+</ul>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-size: 14pt;">Será necesario entrar en CMD, para ello presiona <img src="https://sospedia.net/wp-content/uploads/2018/04/winwdos-mas-r.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="Ver la clave o licencia de tu Windows – sospedia" data-noaft="1" width="76" height="39" /> para poder entrar y a continuación escribe cmd en la casilla de abrir como en la imagen de la derecha.</span></p>
+<p><span style="font-size: 14pt;"> <br /></span></p>
+</td>
+<td style="width: 51.3622%;"><img src="img4.6.png" width="415" height="208" alt="CMD" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-size: 14pt;">Se abrirá una pantalla color negro y deberás escribir el siguiente comando:</span></p>
+<p><strong><span style="font-size: 14pt;">pip install numpy</span></strong></p>
+</td>
+<td style="width: 51.3622%;"><img src="img9.5.png" width="594" height="371" alt="numpy" /></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-size: 14pt;">A continuación:</span></p>
+<p><strong><span style="font-size: 14pt;">pip install pandas</span></strong></p>
+<p></p>
+</td>
+<td style="width: 51.3622%;"><img src="img5.png" width="578" height="361" alt="pip install pandas" /></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-size: 14pt;"> </span></p>
+<p><span style="font-size: 14pt;">A continuación:</span></p>
+<p><strong><span style="font-size: 14pt;">pip install matplotlib</span></strong></p>
+</td>
+<td style="width: 51.3622%;"><img src="img12.5.png" width="575" height="323" alt="matplotlib" /></td>
+</tr>
+<tr>
+<td style="width: 48.6378%;">
+<p><span style="font-size: 14pt;">A continuación:</span></p>
+<p><strong><span style="font-size: 14pt;">pip install control</span></strong></p>
+<p><span style="font-size: 14pt;"> </span></p>
+</td>
+<td style="width: 51.3622%;"><img src="img10.4.png" width="565" height="353" alt="control" /></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18.6667px;"></span></p>
+<p><span style="font-size: 18.6667px;"></span></p>
+<h2>Codificación</h2>
+<p></p>
+<table border="0" style="width: 100%; background-color: #282e3d;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="color: #999999; font-size: 18pt;">#Ejemplo de Sistema Lineal</span></p>
+<p><span style="color: #999999; font-size: 18pt;">#Para ilustrar el uso del paquete, presentamos un ejemplo del diseño de un arquitectura de # control de bucle interior/exterior para el despegue y aterrizaje vertical planar (PVTOL) #ejemplo en FBS2e.</span></p>
+<p style="font-size: 13.44px;"><span style="font-size: 18pt;"><span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">control</span> <span style="color: #ff00ff;">as</span> <span style="color: #ffffff;">ct</span></span><br /><span style="font-size: 18pt;"><span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">matplotlib.pyplot</span> <span style="color: #ff00ff;">as</span> <span style="color: #ffffff;">plt</span></span><br /><span style="font-size: 18pt;"><span style="color: #ff00ff;">import</span> <span style="color: #ffffff;">numpy</span> <span style="color: #ff00ff;">as</span> <span style="color: #ffffff;">np</span></span><br /><span style="font-size: 18pt;">                                                           <span style="color: #999999;"># Parámetros del Sistema</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">m =</span> <span style="color: #ffff00;">4</span>                                                  <span style="color: #999999;"># Masa de la aeronave</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">J =</span> <span style="color: #ffff00;">0.0475 </span>                                          <span style="color: #999999;"># Inercia alrededor del eje de cabeceo</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">r =</span> <span style="color: #ffff00;">0.25</span>                                               <span style="color: #999999;"># Distancia al centro de fuerza</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">g =</span> <span style="color: #ffff00;">9.8</span>                                                <span style="color: #999999;"># Constante gravitacional</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">c =</span> <span style="color: #ffff00;">0.05</span>                                              <span style="color: #999999;"># Factor de amortiguamiento (estimado)</span></span><br /><span style="font-size: 18pt;">                                                          <span style="color: #999999;"># Funciones de transferencia para dinámica</span></span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">Pi = ct.tf([r], [J,</span> <span style="color: #ffff00;">0</span><span style="color: #ffffff;">,</span> <span style="color: #ffff00;">0</span><span style="color: #ffffff;">])</span>                         <span style="color: #999999;"># Bucle interior (rollo)</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">Po = ct.tf([1], [m, c,</span> <span style="color: #ffff00;">0</span><span style="color: #ffffff;">])</span>                      <span style="color: #999999;"># Bucle exterior (posn)</span></span><br /><span style="font-size: 18pt;">       </span></p>
+<p style="font-size: 13.44px;"><span style="font-size: 18pt;"><span style="color: #999999;"># Diseño de control de bucle interno</span></span><br /><span style="font-size: 18pt;">                                                         </span><br /><span style="font-size: 18pt;">                                       <span style="color: #808080;">#Controlador de la dinámica de tono: el objetivo es</span><br /><span style="color: #808080;">                                       #para tener una respuesta rápida para que podamos usar esto</span><br /><span style="color: #808080;">                                       #como un proceso simplificado para la dinámica lateral</span><br /><span style="color: #808080;">                                       #Diseñe un controlador principal simple para el sistema</span></span><br /><span style="font-size: 18pt; color: #ffffff;">k_i, a_i, b_i = 200, 2, 50</span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">Ci = k_i *</span> <span style="color: #00ffff;">ct.tf</span><span style="color: #ffffff;">([1, a_i], [1, b_i])</span></span><br /><span style="font-size: 18pt; color: #ffffff;">Li = Pi * Ci</span><br /><span style="font-size: 18pt;">                                                       <span style="color: #999999;"># Loop transfer function Bode plot, with margins</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">plt.figure(); ct.bode_plot(Li, margins=</span><span style="color: #00ffff;">True</span><span style="color: #ffffff;">)</span></span><br /><span style="font-size: 18pt; color: #ffffff;">plt.savefig(<span style="color: #00ff00;">'pvtol-inner-ltf.pdf'</span>)</span><br /><span style="font-size: 18pt;">                                                       <span style="color: #999999;"># Make sure inner loop specification is met</span></span><br /><span style="font-size: 18pt; color: #ffffff;">plt.figure(); ct.gangof4_plot(Pi, Ci)</span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">plt.savefig('</span><span style="color: #00ff00;">pvtol-gangof4.pdf</span><span style="color: #ffffff;">')</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-size: 18pt;">                                             <span style="color: #999999;"># Diseño del sistema de control lateral (compensador de plomo)</span></span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">a_o, b_o, k_o =</span><span style="color: #ffff00;"> 0.3, 10, 2</span></span><br /><span style="font-size: 18pt; color: #ffffff;">Co = -k_o * ct.tf([1, a_o], [1, b_o])</span><br /><span style="font-size: 18pt; color: #ffffff;">Lo = -m * g * Po * Co</span><br /><span style="font-size: 18pt;">                                        <span style="color: #999999;"># Calcule la función de transferencia de bucle de bucle exterior real</span></span><br /><span style="font-size: 18pt; color: #ffffff;">L = Co * Pi * Po</span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt;">                                        <span style="color: #999999;"># Calcular los márgenes de estabilidad</span></span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt; color: #ffffff;">gm, pm, wgc, wpc = ct.margin(L)</span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt;">                                        <span style="color: #999999;"># Verifique que se cumpla la especificación</span></span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt; color: #ffffff;">plt.figure(); ct.gangof4_plot(-m * g * Po, Co)</span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt;">                                        <span style="color: #999999;"># Diagrama de Nyquist para un diseño completo</span></span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt; color: #ffffff;">plt.figure(); ct.nyquist_plot(L)</span><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">plt.savefig(</span><span style="color: #00ff00;">'pvtol-nyquist.pdf'</span><span style="color: #ffffff;">)</span></span></p>
+<p style="font-size: 13.44px;"><br /><span style="font-size: 18pt;">                                                     <span style="color: #999999;"> # problema</span></span><br /><span style="font-size: 18pt;">                                                     <span style="color: #999999;"> # Step response</span></span><br /><br /><span style="font-size: 18pt;"><span style="color: #ffffff;">plt.savefig(</span><span style="color: #00ff00;">'pvtol-step.pdf'</span><span style="color: #ffffff;">)</span></span></p>
+<p style="font-size: 13.44px;"><span style="font-size: 18pt; color: #ffffff;">plt.show()</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Ejecución</h2>
+<p></p>
+<p></p>
+<table border="0" style="width: 97.9173%; background-color: #edf7ff;" cellpadding="20" height="506">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 18pt;">Este es el resultado de la ejecución</span></p>
+<p><img src="img11.4.png" width="973" height="607" alt="Resultado de la ejecución" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<p><img src="img16.1.png" width="1136" height="639" alt="fig1" /></p>
+<p><img src="img15.2.png" width="1136" height="639" alt="fig2" /></p>
+<p><img src="img14.3.png" width="1136" height="639" alt="fig3" style="font-size: 0.8em;" /><img src="img13.4.png" width="1136" height="639" alt="fig4" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<p></p>
+</div>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ejemplo_1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
