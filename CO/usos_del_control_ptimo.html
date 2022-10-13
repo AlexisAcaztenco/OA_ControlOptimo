@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Usos del Control Óptimo | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li class="current-page-parent"><a href="desarrollo.html" class="current-page-parent daddy">Desarrollo</a>
+   <ul>
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li id="active"><a href="usos_del_control_ptimo.html" class="active no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li><a href="prcticas.html" class="daddy">Prácticas</a>
+   <ul class="other-section">
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="un_poco_de_historia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="unidad_1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Usos del Control Óptimo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_112_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Sistemas dinámicos</h2>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 14pt;">Comprenden la mayoría de sistemas que representan en la vida real, como lo pueden ser </span></p>
+<ul style="list-style-type: square;">
+<li><strong><span style="font-size: 14pt;">Sistemas Físicos</span></strong></li>
+<li><strong><span style="font-size: 14pt;">Sistemas Mecánicos </span></strong></li>
+<li><strong><span style="font-size: 14pt;">Sistemas químicos</span></strong></li>
+</ul>
+<p></p>
+<p><span style="font-size: 14pt;">En los que se puede aplicar el control óptimo.</span></p>
+</td>
+<td style="width: 50%;"><img src="Uso_sistemas.png" width="551" height="372" alt="Usos_sistemas" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong><span style="font-size: 18pt; color: #003785;">Control Óptimo para el Proceso de Deshidratación del Plátano</span></strong></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;"><img src="CO_Platanos.png" alt="" width="1076" height="727" /></td>
+<td style="width: 50%;">
+<p style="text-align: justify;"><strong><span style="font-size: 14pt; color: #003785;">Resumen </span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">La contribución presenta el esquema adaptativo del control no lineal óptimo sintetizado a través del enfoque de optimización inversa para regular la temperatura de un proceso de deshidratación de plátanos. La necesidad de aplicar un enfoque adaptativo es evidente cuando la región de operación deseada se restablece con frecuencia debido a cambios en los parámetros del sistema, lo que requiere bajo esta condición un nuevo ajuste de las ganancias del controlador. Entonces, el algoritmo adaptativo propuesto, proporciona una mayor facilidad para ser implementado, estimando los parámetros del sistema<br />en línea, y también tiene más robustez en contraste con una estrategia óptima lineal adaptativa.<br />Los resultados experimentales obtenidos proporcionan una evidencia convincente de la viabilidad de la<br />diseño adaptativo.<br /><span style="color: #003785;"><strong>Palabras clave:</strong></span> </span><span style="font-size: 14pt;">Proceso de deshidratación de banano, Ahorro de energía, Adaptativo no lineal y lineal<br />control óptimo<br /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18pt;"></span></p>
+<p><strong><span style="font-size: 18pt; color: #003785;">Control Óptimo para el Análisis de Nutrientes del Jitomate</span></strong></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p style="text-align: justify;"><span style="color: #003785;"><strong><span style="font-size: 14pt;">Resumen</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">En este artículo, estudiamos los efectos del control de temperatura en un proceso de deshidratación de rodajas de tomate cuando se consideran dos estrategias de control: controlador PID y control lineal óptimo cuando se considera el retardo de tiempo de entrada inherente. El primer controlador está sintonizado por el método D-partition o y un procedimiento numérico para minimizar un índice de rendimiento cuadrático, el segundo considera un predictor de estado para compensar los efectos de la entrada retrasada. Se cuantifican los ahorros energéticos y las características intrínsecas en las rodajas de tomate (vitamina C, fenoles totales y niveles de licopeno) para concluir las ventajas de los dos controladores en estudio.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>Palabras clave:</strong></span> Proceso de deshidratación, Ahorro de energía, Retención de nutrientes, Control óptimo, PID industrial</span></p>
+</td>
+<td style="width: 50%;"><img src="CO_N_jitomates.png" alt="" title="Co_Jitomate" width="1076" height="727" /></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18pt;"></span></p>
+<p><span style="color: #003785;"><strong><span style="font-size: 18pt;">Control Óptimo para el Temperatura</span></strong></span></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;"><img src="CO_temperatura.png" alt="" title="CO_temperatura" width="1076" height="727" /></td>
+<td style="width: 50%; text-align: justify;">
+<p><span style="color: #003785;"><strong><span style="font-size: 14pt;">Resumen</span></strong></span></p>
+<p><span style="font-size: 14pt;">En esta contribución, obtenemos un controlador no lineal para una clase de sistemas de retardo de tiempo no lineales, utilizando el enfoque de optimización inversa. Evitamos la solución de la ecuación tipo Hamilton <strong>Jacobi Bellman</strong> y la determinación del funcional de Bellman extendiendo el enfoque de optimización inversa para sistemas no lineales sin retardo a sistemas no lineales con retardo de tiempo. Esto se logra mediante la combinación del marco de control de funciones de <strong>Lyapunov</strong> y los funcionales de Lyapunov-Krasovskii de tipo completo. Se obtienen fórmulas explícitas para un control óptimo. La eficiencia del método propuesto se ilustra a través de resultados experimentales aplicados a un proceso de deshidratación cuyo modelo incluye una parte lineal de estado retardado y una parte no lineal retardada. Para dar evidencia del buen desempeño de la ley de control propuesta, comparación experimental contra un controlador industrial Proporcional Integral Derivativo y un controlador lineal óptimo. Además se presentan pruebas experimentales de robustez.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">Palabras clave:</span></strong> Optimalidad inversa, Control no lineal óptimo, Sistemas de retardo de tiempo, Controlador PID industrial.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18pt;"></span></p>
+<h2>Carrera espacial</h2>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 14pt;">Siendo uno de los principales intereses del control optimo ya que nos permite:</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 14pt;">Uso del cálculo de variaciones para <strong>estabilizar las trayectorias</strong> de las naves.</span></li>
+<li><span style="font-size: 14pt;">Sistemas de aterrizaje para <strong>estabilizar el vuelo</strong>.</span></li>
+<li><span style="font-size: 14pt;">En el despegue de las naves tanto para <strong>optimizar el combustible</strong> como la trayectoria que seguirá el vehículo.</span></li>
+</ul>
+</td>
+<td style="width: 50%;"><img src="usosCarreraEspacial.png" width="579" height="391" alt="Carrera Espacial" /></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<h2>Robots</h2>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 14pt;">Aquí entran algunos sistemas electrónicos como pueden ser los helicópteros y cuadricópteros para:</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 14pt;">Determinar <strong>trayectorias </strong></span></li>
+<li><span style="font-size: 14pt;">Estabilizar la <strong>navegación</strong></span></li>
+</ul>
+</td>
+<td style="width: 50%;"><img src="Sistemas.png" width="579" height="391" alt="Robots" /></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="color: #003785;"><strong><span style="font-size: 18pt;">Control Óptimo para Cuadricóptero</span></strong></span></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;"><img src="CO_cuadrop.png" alt="" width="1076" height="727" /></td>
+<td style="width: 50%; text-align: justify;">
+<p><span style="color: #003785;"><strong><span style="font-size: 14pt;">Resumen</span></strong></span></p>
+<p><span style="font-size: 14pt;">En este trabajo se presenta un método de navegación en ambientes al aire libre cuando hay presencia de árboles en el espacio de trabajo, para detectar los obstáculos se realiza un sensor de escaneo láser con un enfoque geométrico. El seguimiento de la trayectoria del camino encontrado se realiza con un control no lineal subóptimo de horizonte finito en dominio discreto; como se demostró en resultados anteriores, la secuencia no lineal subóptima permite optimizar la energía. Se obtienen resultados experimentales satisfactorios en exteriores utilizando un vehículo de cuatro rotores con sensor GPS.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">Palabras clave:</span></strong> Prevención de colisiones, planificación de rutas, control no lineal subóptimo, quadrotor.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18pt;"></span></p>
+<p><span style="color: #003785;"><strong><span style="font-size: 18pt;">Control Óptimo para Exoesqueleto híbrido </span></strong></span></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p style="font-size: 13.44px; text-align: justify;"><span style="color: #003785;"><strong><span style="font-size: 14pt;">Resumen</span></strong></span></p>
+<p style="font-size: 13.44px; text-align: justify;"><span style="font-size: 14pt;">En este resumen, se presenta la implementación de un control discreto no lineal subóptimo para optimizar el consumo de energía en un exoesqueleto híbrido para la articulación del codo. El exoesqueleto se utiliza para amplificar la fuerza del usuario y es híbrido en el sentido de que combina dos tipos de actuadores: músculos neumáticos y motores Harmonic Drive, que otorgan potencia y precisión al sistema, respectivamente. El exoesqueleto es autónomo en el sentido energético y es impulsado por aire comprimido y baterías. El control subóptimo se utiliza para aumentar el tiempo de operación del exoesqueleto. Esta ley de control penaliza el consumo de energía, y tiene un efecto directo sobre el tiempo de operación del prototipo.</span></p>
+<p style="font-size: 13.44px; text-align: justify;"><span style="font-size: 14pt;"><strong><span style="color: #003785;">Palabras clave:</span></strong> Incremento de fuerza, exoesqueleto híbrido, control subóptimo.</span></p>
+</td>
+<td style="width: 50%; text-align: justify;"><img src="Exoexqueleto_usos.png" alt="" width="1076" height="727" /></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 18pt;"></span></p>
+<p><span style="color: #003785;"><strong><span style="font-size: 18pt;">Control Óptimo para un Drone</span></strong></span></p>
+<hr />
+<p><span style="font-size: 18pt;"></span></p>
+<table border="0" style="width: 100%; background-color: #def7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;"><img src="Drone_usos_art.png" alt="" width="1076" height="727" /></td>
+<td style="width: 50%; text-align: justify;">
+<p><span style="color: #003785;"><strong><span style="font-size: 14pt;">Resumen</span></strong></span></p>
+<p><span style="font-size: 14pt;">En este artículo, se propone una secuencia de control discreta no lineal subóptima para sistemas de control afines discretos no lineales. Usando el enfoque de programación dinámica en el dominio del tiempo discreto, la secuencia de control subóptima se obtiene en cada paso considerando un índice de rendimiento cuadrático de horizonte finito. La estrategia de control propuesta se aplica para mejorar las prestaciones dinámicas y energéticas de un vehículo aéreo no tripulado quadrotor, cuando está sujeto a maniobras o condiciones de vuelo especiales, tales como las fases de despegue y aterrizaje o seguimiento de trayectoria. Para estas tareas se podría requerir convergencia en tiempo finito y buen comportamiento. Realizando un estudio experimental comparativo con otros controladores (controladores lineales óptimos y PD), se demuestra la efectividad del enfoque propuesto.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">Palabras clave:</span></strong> Discreto control óptimo, actuaciones enérgicas, quadrotor.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Sistemas Mecánicos</h2>
+<table border="0" style="width: 100%; background-color: #edf7ff;" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<p><span style="font-size: 14pt;">Sistema de <strong>suspensión de automóviles</strong>.</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 14pt;">Para la estabilidad de un vehículo en carretera o terrenos no estables</span></li>
+</ul>
+<p><span style="font-size: 14pt;">Sistemas <strong>amortiguadores de edificios</strong>.</span></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 14pt;">Para estabilizar el movimiento ante sismos.</span></li>
+</ul>
+</td>
+<td style="width: 50%;"><img src="Uso_Sistemas_Mecanicos.png" width="579" height="391" alt="Sistemas mecánicos" /></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+</div>
+<p><br /><br /></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Artículos Sobre Sistemas Dinámicos </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_82" class="block iDevice_content">
+<p>En esta sección encontrara más información de los sistemas dinámicos mencionados en esta sección.</p>
+</div>
+<ul class='exeFileList'><li><a href='Control_AnalisisDeNutrientes.pdf' target='_blank'>AnalisisNutrientesJitomateConControlóptimo.pdf<span> (Ventana nueva)</span></a></li>
+<li><a href='Control_Temperatura.pdf' target='_blank'>Control_Temperatura.pdf<span> (Ventana nueva)</span></a></li>
+<li><a href='Control_Platano.pdf' target='_blank'>Control_Platano.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Artículos sobre Robótica </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_82" class="block iDevice_content">
+<p>En esta sección encontraremos, artículos sobre robots y el uso del control optimo.</p>
+</div>
+<ul class='exeFileList'><li><a href='Control_quadcopter.pdf' target='_blank'>Control_quadcopter.pdf<span> (Ventana nueva)</span></a></li>
+<li><a href='Control_Exoesqueleto.pdf' target='_blank'>Control_Exoesqueleto.pdf<span> (Ventana nueva)</span></a></li>
+<li><a href='Control_Drone.pdf' target='_blank'>Control_Drone.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="un_poco_de_historia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="unidad_1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
