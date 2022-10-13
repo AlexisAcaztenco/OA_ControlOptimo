@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Actividad 4 | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-46"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="prcticas.html" class="current-page-parent daddy">Prácticas</a>
+   <ul>
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li id="active"><a href="actividad_4.html" class="active no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividad_3.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_3_labview.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Actividad 4</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_115_2" class="block iDevice_content">
+<div class="pbl-task-description"><h1><span style="font-size: 24pt; color: #003785;">1.-Identificación.</span></h1>
+<hr />
+<p><span style="font-size: 24pt;"><img src="img1.10.png" width="1080" height="201" alt="practica4electromagnetismo" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p></p>
+<h1><span style="color: #003785;">2.-Objetivo.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;">El <strong>alumno</strong> podrá implementar un control óptimo de horizonte infinito sobre un <strong>sistema físico</strong> y comprobará sus características de <strong>estabilidad asintótica.</strong></span><span style="font-size: 14pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">3.-Marco Teórico.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%; text-align: justify;">
+<p><span style="font-size: 14pt;">El desarrollo del marco teórico será dado en el aula por el profesor.</span></p>
+<p><span style="font-size: 14pt;">El profesor deberá cubrir los siguientes aspectos:</span></p>
+<ol>
+<li><span style="font-size: 14pt;">La resolución del Regulador cuadrático óptimo (LQR) mediante la programación dinámica para horizonte finito e infinito.</span></li>
+<li><span style="font-size: 14pt;">Obtención de la ecuación de Ricatti algebraica.</span></li>
+<li><span style="font-size: 14pt;">Las propiedades asintóticas del LQR.</span></li>
+<li><span style="font-size: 14pt;">La ecuación de Hamilton Jacobi Bellman para sistemas lineales y no lineales.</span></li>
+<li><span style="font-size: 14pt;">La relación de la función de Bellman y la función de Lyapunov para los sistemas lineales.</span></li>
+<li><span style="font-size: 14pt;">Las condiciones bajo las cuales existe una sola solución a la ecuación algebraica de Ricatti.</span></li>
+</ol>
+<p>           </p>
+<p><strong><span style="font-size: 14pt;"><span style="color: #003785;">Tarjetas de adquisición recomendadas: USB 6008-09 o PCI.</span></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">4.- Medidas de Seguridad.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ul>
+<li><span style="font-size: 14pt;"><strong>Verificar las conexiones</strong> antes de realizar las mediciones para evitar daño al equipo y a los componentes.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">5.- Reactivos/insumos, materiales/utensilios y equipos.</span></h1>
+<hr />
+<p><img src="img2.14.png" width="1078" height="317" alt="p3reactivosmagnetismo" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<h1><span style="color: #003785;">6.-Procedimiento Para el Desarrollo de la Práctica.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellspacing="20" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>1.</strong> </span>Identifique mediante la respuesta al escalón el modelo lineal del motor de CD de imán permanente. <br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>2.</strong></span> Dado un índice de desempeño, calcule un control óptimo para tareas de regulación y estabilización del motor de CD, haciendo uso del modelo identificado en el paso anterior. Calcule las locaciones óptimas de los polos en lazo cerrado para cada elección de Q y R. <br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong><span style="color: #003785;">3.</span></strong> Implemente el control óptimo en Labview y construya un seguidor de voltaje con el TIP 41. No olvide compensar en el programa del controlador la caída de voltaje del seguidor y la zona muerta del motor de CD.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong><span style="color: #003785;">4.</span></strong> La interfaz con el usuario deberá tener la facilidad de reprogramar Q y R además de la referencia en RPM del motor de CD.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>5.</strong></span> Realice un frenado dinámico del motor de CD, a velocidad constante invirtiendo el signo de la señal de control. Haga una comparación de tiempos empleados por el motor en parar sin frenado dinámico y con frenado dinámico.</span><span style="font-size: 14pt;"></span><span style="font-size: 14pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">7.-Cuestionario.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p></p>
+<p><span style="font-size: 14pt;">1.- ¿Por qué en el caso de horizonte infinito es posible incluir el concepto de estabilidad?<br />2.- Discuta la robustez el control óptimo (el modelo del motor de CD empleado es aproximado).</span><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong><span style="font-size: 18pt;">Conclusiones:</span></strong></span> Las anotaciones concluyentes serán realizadas individualmente por los alumnos en el reporte final.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">8.-Bibliografía.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ol>
+<li><span style="font-size: 14pt;"><strong>Optimal Control Theory: An Introduction</strong>, Donald E. Kirk, Ed. Dover, 2004.</span></li>
+<li><span style="font-size: 14pt;">Apuntes de clase de sistemas de control II y I. </span></li>
+<li><span style="font-size: 14pt;">Ayuda del software LabView.</span></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividad_3.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_3_labview.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

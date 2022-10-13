@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Actividad 1 | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-43"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="prcticas.html" class="current-page-parent daddy">Prácticas</a>
+   <ul>
+      <li id="active"><a href="actividad_1.html" class="active no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="prcticas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Actividad 1</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_112_2" class="block iDevice_content">
+<div class="pbl-task-description"><h1><span style="font-size: 24pt; color: #003785;">1.-Identificación.</span></h1>
+<hr />
+<p><span style="font-size: 24pt;"><img src="img14.5.png" width="1083" height="199" alt="P_CO_P1" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p></p>
+<h1><span style="color: #003785;">2.-Objetivo.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;">El <strong>alumno</strong> implementará un c<strong>ontrol óptimo</strong> de <strong>horizonte finito</strong> sobre la plataforma de <strong>Labview</strong> para un <strong>sistema electromecánico: motor de CD (modelo lineal)</strong>. Se implementarán las d<strong>os técnicas: lazo abierto y lazo cerrado</strong>. El alumno calculará la <strong>ganancia del control óptimo</strong> mediante la resolución numérica del sistema adjunto.</span><span style="font-size: 14pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">3.-Marco Teórico.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%; text-align: justify;">
+<p><span style="font-size: 14pt;">El desarrollo del marco teórico será dado en el aula por el profesor.</span></p>
+<p><span style="font-size: 14pt;">El profesor deberá cubrir los siguientes aspectos:</span></p>
+<ol>
+<li><span style="font-size: 14pt;"><strong>Resolución del problema</strong> del control  óptimo para sistemas lineales mediante el cálculo variacional, solución en lazo abierto y cerrado.</span></li>
+<li><span style="font-size: 14pt;"><strong>Obtención del sistema adjunto y su resolución</strong> para resolver el problema de las dos fronteras.</span></li>
+<li><span style="font-size: 14pt;"><strong>Revisión de ejemplos</strong> de aplicación. </span></li>
+</ol>
+<p><span style="font-size: 14pt;">Nota: Software de apoyo: <strong>Matlab y Lab View</strong></span></p>
+<p><strong><span style="font-size: 14pt;"><span style="color: #003785;">Tarjetas de adquisición recomendadas: USB 6008-09.</span></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">4.- Medidas de Seguridad.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ul>
+<li><span style="font-size: 14pt;"><strong>Verificar las conexiones</strong> antes de realizar las mediciones para evitar daño al equipo y a los componentes.</span></li>
+<li><span style="font-size: 14pt;">Tener cuidado de no poner en <strong>corto circuito</strong> las fuentes de alimentación.</span></li>
+<li><span style="font-size: 14pt;">En la medida de lo posible poner un diodo en las salidas analógicas del módulo de adquisición de datos para <strong>evitar dañar los canales analógicos</strong> con corrientes inversas.</span></li>
+<li><span style="font-size: 14pt;">Conectar circuitos de potencia con <strong>disipadores en los componentes eléctronicos</strong> para evitar dañarlos.</span></li>
+</ul>
+<p><span style="font-size: 14pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">5.- Reactivos/insumos, materiales/utensilios y equipos.</span></h1>
+<hr />
+<p><img src="img1.9.png" width="1090" height="316" alt="CV_H_I" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<h1><span style="color: #003785;">6.-Procedimiento Para el Desarrollo de la Práctica.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellspacing="20" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong>1.</strong> </span>En la primera parte de la práctica el objetivo es controlar óptimamente  la velocidad de un motor de CD con tacogenerador (Fig. 1). Debe tomar en cuenta la relación de voltaje/RPM del motor, para caracterizar la linealidad del sensor. El modelo lineal del motor de CD con tacogenerador puede obtenerse mediante la respuesta al escalón y el osciloscopio. De esta forma se tienen los parámetros K y T. Se obtiene la representación espacio estado.</span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong>2.</strong></span> Ahora se calcula el control óptimo de horizonte finito resolviendo el sistema aumentado y se obtiene la matriz P(t) para la solución en lazo cerrado y solución en lazo abierto. Compare ambas alternativas mediante su respuesta: roce un poco la flecha del motor y verifique que la solución en lazo cerrado es más robusta que la otra.</span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong>3.</strong></span>  En el programa en Labview, realice el conteo del tiempo mediante un ciclo While temporizado (Timed Loop) y el número de iteraciones. De esta forma tendrá disponible el tiempo de ejecución del programa para sustituir en el término P(t). Realice una interfaz adecuada en donde se despliegue la señal de control (control óptimo), el error, la velocidad en RPM del motor (trayectoria óptima) y sea posible proporcionar las matrices de penalización Q, R y el tiempo de convergencia tf. Debe agregar un botón de paro y arranque para el motor. Para el cálculo del término P(t) puede usar un Matlab script. Debe desplegar los datos en Matlab.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">4.</span></strong> Calcule el Offset adecuado para que el motor continúe girando a la velocidad deseada por medio del cálculo del estado estacionario de la ecuación de estado y agregue este al control. </span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">5.</span> </strong>Realice varios experimentos con distintas penalizaciones de convergencia del estado, señal de control y tiempo de convergencia. Compare los resultados y discútalos en el reporte final.</span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">6.</span></strong> Realice un frenado dinámico del motor, invierta el signo de la señal de control y realice comparaciones de la señal dada por el tacogenerador sin frenado dinámico y con frenado dinámico. Para esta parte el motor debe estar girando a velocidad constante y en cierto momento debe parar. </span></p>
+<p><span style="font-size: 14pt;"><strong><span style="color: #003785;">7.</span></strong> Realice los mismos pasos pero ahora para un proceso de térmico (Figura 2). Compare con el desempeño dado por un PID industrial de temperatura. Considere que este sistema tiene un retardo, el cual no será considerado para el diseño de la ley de control. Sin embargo, usted debe asegurar la estabilidad del lazo calculando las raíces de magnitud “pequeña” del sistema en lazo cerrado.</span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong>8.</strong> </span>Realice un reporte de la práctica con comentarios individuales.</span></p>
+<p><span style="font-size: 14pt;"><img src="img2.11.png" width="476" height="367" alt="Fig1_CV_H_i" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;"><img src="img3.13.png" width="521" height="293" alt="Fig2_CV_H_i" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">7.-Cuestionario.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p></p>
+<p><span style="font-size: 14pt;">1.- Mencione las ventajas de la solución en lazo abierto y lazo cerrado.</span></p>
+<p><span style="font-size: 14pt;">2. Diga cuales son las diferencias en la trayectoria y controles óptimos para distintas penalizaciones y tiempos de convergencia.</span></p>
+<p><span style="font-size: 14pt;">3. Reflexione y reporte sus conclusiones acerca del uso práctico del control óptimo.</span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong><span style="font-size: 18pt;">Conclusiones:</span></strong></span> Las anotaciones concluyentes serán realizadas individualmente por los alumnos en el reporte final.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">8.-Bibliografía.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ol>
+<li><span style="font-size: 14pt;"><strong>Optimal Control Theory: An Introduction</strong>, Donald E. Kirk, Ed. Dover, 2004.</span></li>
+<li><span style="font-size: 14pt;"><strong>Optimal Control: An Introduction to the Theory and Its Applications</strong>, Michael Athans, Peter L. Falb, Ed. Dover, 2006.</span></li>
+<li><span style="font-size: 14pt;"><strong>The computation and theory of optimal control</strong>, Peter Dyer y S. R. McReynolds, Mathematics in Science and Eng, vol. 65, Ed. Academic Press, 1970.</span></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="prcticas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

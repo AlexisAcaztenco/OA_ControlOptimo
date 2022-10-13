@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Actividad 3 LabView | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-41"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="prcticas.html" class="current-page-parent daddy">Prácticas</a>
+   <ul>
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li><a href="actividad_2.html" class="no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li id="active"><a href="actividad_3_labview.html" class="active no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividad_4.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Actividad 3 LabView</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Practica 3</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_113_2" class="block iDevice_content">
+<div class="pbl-task-description"><h1><span style="font-size: 24pt; color: #003785;">1.-Identificación.</span></h1>
+<hr />
+<p><span style="font-size: 24pt;"></span></p>
+<p><img src="img3.12.png" width="999" height="347" alt="p3_descrip" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h1><span style="color: #003785;">2.-Introducción.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Instrumento tradicional.</strong> Aquel instrumento tipo hardware rígido que se puede adquirir de distintos fabricantes y cuya funcionalidad viene definida por estos últimos.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Instrumento Virtual.</strong> Toda computadora en la cual se ha insertado o conectado, interna o externamente un dispositivo de Adquisición de datos rodeado de un software lo suficientemente poderoso y flexible como para sacar el máximo provecho de ese hardware.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">Así, estos dos tipos de instrumentación </span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Placa o módulo de Adquisición de datos.</strong> Hardware un amplificador y acondicionador de señal eléctrica, conversores Analógico a Digital, Digital Analógico, bornes de conexión para señal eléctrica y un puerto de conexión al Bus de datos de la Computadora. </span></p>
+<p><span style="font-size: 14pt;"><img src="img14.6.png" width="531" height="291" alt="intrumentos practica3" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="color: #003785;"><strong><span style="font-size: 18pt;">Componentes de un Sistema de Adquisición de datos.</span></strong></span><span style="color: #003785;"><strong><span style="font-size: 18pt;"></span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">1)<strong> Computadora o computadora personal (PC)</strong>. El cual lleva a cabo todo el procesamiento de información, la cual una vez adquirida puede ser exhibida en tiempo real, guardada en un formato de intercambio en un archivo, transmitida a través de una LAN (Local Area NetWork) o través de Internet. La información adquirida puede ser analizada ejecutando en la computadora algún cálculo complejo previo: escalamiento, filtrado, integración, diferenciación, estadística, alguna transformación matemática, etc.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">2) <strong>Software de adquisición.</strong> Este elemento corresponde al lenguaje a usar en el cual se programará el configurará el programa que realizará la funcionalidad deseada por el sistema de adquisición de datos. Como mínimo se tienen dos niveles: un driver o software de bajo nivel que comunica la tarjeta con el sistema operativo de la computadora y un lenguaje de desarrollo generalmente gráfico o utilitario o de alto nivel, donde se configurará o programará la aplicación final con la que interactuará el operador al hacer los ensayos y mediciones. </span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">3) <strong>Bus de conexión o puerto de conexión.</strong> Tiene por misión conectar la computadora con el adquisidor de datos. Puede ser bus PCI, PCMCIA, puerto serial, paralelo, USB, GPIB, etc.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">4) <strong>Adquisidor de datos.</strong> Toma los datos del acondicionador y hace la conversión análoga digital de la información. Puede ser un elemento interno o externo de la computadora. El enlace entre la computadora y el adquisidor no tiene que ser permanente.</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">5) <strong>Acondicionador de señal.</strong> Tiene la función de adaptar la señal que se recibe del sensor, amplificándola, linealizándola, filtrándola, etc. </span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;">6) <strong>Transductor.</strong> Es el que convierte un parámetro físico, como temperatura, presión, fuerza, luz, desplazamiento, etc. en un fenómeno eléctrico, neumático, etc., capaz de ser medido o mensurado. </span></p>
+<p></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Software LabVIEW.</strong> LabVIEW es un software de ingeniería de sistemas para aplicaciones que requieren pruebas, medidas y control con acceso rápido a hardware e información de datos. Cada programa realizado en LabVIEW recibe la denominación de VI (Virtual Instruments). Estos VI’s pueden anidarse dentro uno de otro, con lo cual el entorno es jerárquico y reusable. Un VI consta de dos áreas bien definidas: Panel frontal (Front Panel), es la que verá el usuario final cuando ejecute el programa y será la interfaz gráfica de usuario (GUI) con la cual interactuará en la aplicación final. Por otro lado, el Diagrama a Bloques (Block Diagram), que es el área de programación, donde se van colocando las funciones representadas por objetos gráficos y se cablean entre sí, a los efectos de desarrollar la lógica y la secuencia de programación deseada. </span></p>
+<p><span style="font-size: 14pt;"><img src="img14.6.png" width="804" height="483" alt="trsductor" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">3.-Objetivo General.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%; text-align: justify;"><span style="font-size: 14pt;">El <strong>alumno</strong> será capaz de realizar <strong>mediciones de sensores</strong> de <strong>temperatura, magnéticos, de tensión, presión, desplazamiento y rotación</strong>, mediante el uso de instrumentación <strong>tradicional</strong> e instrumentación <strong>virtual</strong>, para poder realizar la caracterización de los distintos sensores y almacenar y desplegar los datos adquiridos.</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1>4.- Objetivos Específicos.</h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ul>
+<li><span style="font-size: 14pt;"><strong>Realizar</strong> la medición de señales dadas por diferentes sensores de variables físicas mediante el uso de instrumentación tradicional: multímetros y osciloscopios, para la caracterización de dichos elementos.</span></li>
+<li><span style="font-size: 14pt;"><strong>Realizar</strong> lectura y escritura de datos mediante un Sistema de Adquisición de datos basado en un adquisidor de datos y una computadora personal con tiempo de muestreo programable para la medición de señales de voltaje.</span></li>
+<li><span style="font-size: 14pt;"><strong>Realizar</strong> la medición de señales dadas por diferentes sensores de variables físicas mediante el uso de instrumentación virtual, para la caracterización de dichos elementos, su procesamiento básico (filtro por software y escalamiento).</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1>5.- Reactivos/insumos, materiales/utensilios y equipos.</h1>
+<hr />
+<p></p>
+<p><img src="img5.6.png" width="651" height="775" alt="p3 reacivos" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h1>6.-Desarrollo de la Actividad Práctica.</h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellspacing="20" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt;">1 En este paso se realizará la lectura y escritura de canales analógicos de entrada y salida, respectivamente, de una tarjeta de adquisición de datos. <br />2 Conectar el módulo USB 6008 en el puerto USB de la computadora mediante el cable proporcionado, verifique que el LED indicador de la tarjeta esté parpadeando, si esto no ocurre, desconecte y vuelva a conectar el módulo.<br />3 Abrir el software NIMAX y seleccione el dispositivo USB 6008, realice una auto-prueba del módulo (Self Test), debe desplegarse un mensaje de que la auto-prueba ha sido realizada exitosamente.</span></p>
+<p><span style="font-size: 14pt;"><img src="img4.8.png" width="929" height="511" alt="NIMAx" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">4. En el panel de prueba, seleccione un canal analógico de entrada y uno de salida. Seleccionar el modo RSE o Diferencial, según la medición a realizar y lo explicado por el profesor y el modo En Demanda para el muestreo. Conecte la fuente de CD a las terminales de la tarjeta, asegúrese que el voltaje seleccionado en la fuente no sea mayor de ±10 Vcd, de acuerdo con la siguiente configuración de terminales</span></p>
+<p><span style="font-size: 14pt;"><img src="img5.7.png" width="536" height="557" alt="lBIEW PORTS" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">5. Mediante un voltímetro, mida el voltaje en el canal analógico de salida seleccionado de acuerdo con la figura anterior, verificar que la medida sea la programada en el Panel de prueba del NIMAX. </span></p>
+<p><span style="font-size: 14pt;">6. Una vez verificado que los canales analógicos de entrada y salida funcionan normalmente, cierre el programa NIMAX.</span></p>
+<p><span style="font-size: 14pt;">7. Ejecutar el software LabVIEW, seleccione un Instrumento virtual en blanco (Blank VI) </span></p>
+<p><span style="font-size: 14pt;"><img src="img6.6.png" width="868" height="519" alt="LBVIEW MY rio 2013" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">8. Deberán abrirse dos ventanas: Panel frontal y Diagrama a bloques. Seleccionar en el panel frontal un graficador (Waveform Chart), cambie el nombre del graficador y en el diagrama a bloques un ciclo temporizado (Timed Loop), un Asistente de adquisición de datos (DAQ Assistant) y configure la lectura de voltaje en el mismo canal que verificó con el NIMAX. Seleccione un bloque de escritura a archivo (Write To Measurement File), seleccionando formato LVM, sin cabeceras, seleccione la ruta donde se guardará el archivo. Conecte el graficador con la salida del asistente de adquisición de datos.</span></p>
+<p><span style="font-size: 14pt;"><img src="img7.6.png" width="1032" height="582" alt="pRUEBASPEPE" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">9. Conectar la tarjeta con la fuente de voltaje conectada al canal analógico probado en el NIMAX.</span></p>
+<p><span style="font-size: 14pt;">10. Asegúrese que todos elementos estén dentro del ciclo temporizado. Configurar el tiempo de muestreo (Period). Ejecute el programa.</span></p>
+<p><span style="font-size: 14pt;">11. Finalmente, abrir el archivo LVM con el block de notas, copie los datos de tiempo y datos leídos en canal analógico de entrada y grafique en Matlab.</span></p>
+<hr />
+<p><span style="font-size: 14pt;">En</span><span style="font-size: 14pt;"> esta segunda parte de la práctica se medirán las señales eléctricas de temperatura, termistor, termopar, sensor efecto hall, celdas de carga, galgas extensiométricas, sensor ultrasónico, decodificador óptico y tacogenerador.</span></p>
+<p><span style="font-size: 14pt;">1.- Sensado de temperatura mediante un sensor LM35. Conectar el sensor LM35 alimentado con 5 Vcd de la siguiente manera:</span></p>
+<p><span style="font-size: 14pt;"><img src="img8.6.png" width="404" height="301" alt="Conexionsennsor" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">2. Hacer un programa en LabVIEW que grafique la temperatura sabiendo que 10mV representan 1 grado centígrado. Además, filtre la señal con un compresor de datos.</span></p>
+<p><span style="font-size: 14pt;"><img src="img9.7.png" width="599" height="609" alt="Conf factor adecuado" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">3. Configurar el factor a un valor adecuado. </span></p>
+<p><span style="font-size: 14pt;">Ahora conectar el termistor de 50 KOhms a una entrada analógica en serie con una resistencia de 1 KOhms como se muestra a continuación, la alimentación de 5 Vcd es proporcionada con la tarjeta.</span></p>
+<p><span style="font-size: 14pt;"><img src="img10.7.png" width="613" height="399" alt="thermistor" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;"> 4. Realizar un programa que despliegue la señal analógica, considerando la siguiente configuración en el asistente de adquisición de datos: </span></p>
+<p><span style="font-size: 14pt;"><img src="img11.5.png" width="726" height="620" alt="create new" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">5. Después seleccionar un canal analógico de entrada y configure con los siguientes valores: </span></p>
+<p></p>
+<p><span style="font-size: 14pt;"><img src="img12.6.png" width="706" height="519" alt="configuritinfg lab" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">El modo de adquisición debe seleccionarse a una muestra en demanda si usted está usando un ciclo temporizado y almacene en archivo para luego graficar en Matlab.</span></p>
+<p><span style="font-size: 14pt;"> 6. De acuerdo con la ley de Kirchoff de voltaje, calcular la resistencia del termistor Rt, y de acuerdo a la fórmula de       Steinhart-Hart calcule la desviación de temperatura.</span><br /><span style="font-size: 14pt;">7. Determinar la precisión obtenida con la tarjeta, repita las mismas mediciones haciendo uso del osciloscopio y la alimentación de 5 Vcd con una fuente de voltaje. Haga una tabla comparativa de valores leídos por la tarjeta y las medidas hechas con el osciloscopio.</span><br /><span style="font-size: 14pt;">8. En esta etapa se realizará la lectura de un termopar tipo J. Dicho dispositivo tiene entre sus terminales una diferencia de potencial de magnitud muy pequeña, además que la terminal eléctrica con potencial menor (-, terminal de Hierro-Cromo) debe estar a cero grados Centigrados. Para lograr esto, se compensa eléctricamente la punta fría, con el circuito integrado AD594 para termopares tipo J. Realice las siguientes conexiones del termopar y el circuito integrado AD594:</span></p>
+<p><span style="font-size: 14pt;"><img src="img13.5.png" width="629" height="327" alt="Constantan" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;">9. Conectar las terminales 8-9 (+) y 7 (-) con la tarjeta de adquisición de datos y realice un programa en LabVIEW para leer y escribir a archivo los datos leídos de la salida del circuito AD594. Grafique en Matlab los datos almacenados. Realice las mismas mediciones con el osciloscopio y multímetro, y haga una tabla comparativa entre ambas mediciones.</span></p>
+<p><span style="font-size: 14pt;">10. En esta etapa de la práctica se medirán y almacenarán los datos obtenidos de las mediciones realizadas de un sensor de efecto Hall SS49E, de Honeywell. Este sensor de tres terminales tiene las siguientes características lineales y principio de funcionamiento:</span></p>
+<p><span style="font-size: 14pt;"><img src="img14.4.png" width="741" height="268" alt="transfer caracteritics" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">7.-Cuestionario.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt;">1. Observe los gráficos obtenidos de las mediciones de señal de salida de cada sensor, ¿son lineales todos?, ¿cuáles no? Argumente su respuesta.<br />2. ¿Considera que los circuitos de medición vistos en clase le fueron útiles para comprender como realizar las mediciones de cada sensor?, comente los más útiles.<br />3. ¿Como piensa que estas prácticas contribuyen a su formación como ingeniero?<br />Realice comentarios acerca de cómo la caracterización de estos sensores resultaría útil para implementar un lazo de control.</span><span style="font-size: 10pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1>8.-Bibliografía</h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ol>
+<li><span style="font-size: 14pt;"><a href="https://naylampmechatronics.com/blog/25_tutorial-trasmisor-de-celda-de-carga-hx711-balanza-digital.html#:~:text=Una%20celda%20de%20carga%20es,configuradas%20en%20un%20puente%20Wheatstone">https://naylampmechatronics.com/blog/25_tutorial-trasmisor-de-celda-de-carga-hx711-balanza-digital.html#:~:text=Una%20celda%20de%20carga%20es,configuradas%20en%20un%20puente%20Wheatstone</a>.</span></li>
+<li><span style="font-size: 14pt;">Chicala, C. (2004). Adquisición de datos: medir para conocer y controlar. Soluciones en Control.</span></li>
+<li><span style="font-size: 14pt;">Solé, A. C. (2005). Instrumentación industrial. Marcombo.</span></li>
+<li><span style="font-size: 14pt;">Cooper, W. D., &amp; Helfrick, A. D. (1991). Instrumentación electrónica moderna y técnicas de medición. Editorial Prentice-Hall Hispanoamericana, SA México.</span><br /><span style="font-size: 14pt;">Apuntes de clase correspondientes a la materia de Instrumentos para Mediciones electrónicas </span></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividad_4.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

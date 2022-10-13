@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Actividad 2 | Control Óptimo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexis Fernando Acaztenco Gonzalez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-44"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control Óptimo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control Óptimo</a></li>
+   <li><a href="presentacin.html" class="no-ch">Presentación</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="desarrollo.html" class="daddy">Desarrollo</a>
+   <ul class="other-section">
+      <li><a href="pioneros_y_exponentes.html" class="no-ch">Pioneros y Exponentes</a></li>
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia</a></li>
+      <li><a href="usos_del_control_ptimo.html" class="no-ch">Usos del Control Óptimo</a></li>
+      <li><a href="unidad_1.html" class="daddy">Unidad 1</a>
+      <ul class="other-section">
+         <li><a href="sistemas.html" class="no-ch">Sistemas</a></li>
+         <li><a href="control_admisible.html" class="no-ch">Control Admisible</a></li>
+         <li><a href="condiciones_necesarias_para_un_ptimo_local_clculo_de_variaciones.html" class="no-ch">Condiciones Necesarias para un Óptimo Local (Cálculo de Variaciones).</a></li>
+         <li><a href="programacin_dinmica.html" class="no-ch">Programación Dinámica</a></li>
+         <li><a href="variaciones.html" class="daddy">Variaciones</a>
+         <ul class="other-section">
+            <li><a href="lema_condicin_estacionaria.html" class="no-ch">Lema Condición Estacionaria</a></li>
+            <li><a href="lema_segunda_variacin.html" class="no-ch">Lema Segunda Variación</a></li>
+         </ul>
+         </li>
+         <li><a href="condiciones_suficientes_para_un_ptimo_local.html" class="no-ch">Condiciones Suficientes para un Óptimo Local</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="ejemplos.html" class="daddy">Ejemplos</a>
+   <ul class="other-section">
+      <li><a href="ejemplo_1.html" class="no-ch">Ejemplo 1</a></li>
+      <li><a href="ejemplo_2.html" class="no-ch">Ejemplo 2</a></li>
+      <li><a href="ejemplo_3.html" class="no-ch">Ejemplo 3</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="prcticas.html" class="current-page-parent daddy">Prácticas</a>
+   <ul>
+      <li><a href="actividad_1.html" class="no-ch">Actividad 1</a></li>
+      <li id="active"><a href="actividad_2.html" class="active no-ch">Actividad 2</a></li>
+      <li><a href="actividad_3.html" class="no-ch">Actividad 3</a></li>
+      <li><a href="actividad_4.html" class="no-ch">Actividad 4</a></li>
+      <li><a href="actividad_3_labview.html" class="no-ch">Actividad 3 LabView</a></li>
+   </ul>
+   </li>
+   <li><a href="evaluacin.html" class="daddy">Evaluación</a>
+   <ul class="other-section">
+      <li><a href="evaluacin_1.html" class="no-ch">Evaluación 1</a></li>
+      <li><a href="evaluacin_2.html" class="no-ch">Evaluación 2</a></li>
+   </ul>
+   </li>
+   <li><a href="glosario.html" class="no-ch">Glosario</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+   <li><a href="acerca_de.html" class="no-ch">Acerca de</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividad_1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Actividad 2</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_113_2" class="block iDevice_content">
+<div class="pbl-task-description"><h1><span style="font-size: 24pt; color: #003785;">1.-Identificación.</span></h1>
+<hr />
+<p><span style="font-size: 24pt;"><img src="img3.15.png" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p></p>
+<h1><span style="color: #003785;">2.-Objetivo.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;">Al término de la práctica <strong>el alumno</strong> habrá implantado en un <strong>sistema multivariable</strong> un control óptimo de <strong>horizonte finito</strong>.</span><span style="font-size: 14pt;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">3.-Marco Teórico.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%; text-align: justify;">
+<p><span style="font-size: 14pt;">El desarrollo del marco teórico será dado en el aula por el profesor.</span></p>
+<p><span style="font-size: 14pt;">El profesor deberá cubrir los siguientes aspectos:</span></p>
+<ol>
+<li><span style="font-size: 14pt;"><strong>Resolución del problema del control  óptimo</strong> para sistemas lineales mediante el cálculo variacional, <strong>solución en lazo cerrado.</strong></span></li>
+<li><span style="font-size: 14pt;"><strong>Obtención del sistema adjunto y su resolución</strong> para resolver el problema de las dos fronteras.</span><br /><span style="font-size: 14pt;">Revisión de ejemplos de aplicación. </span></li>
+<li><span style="font-size: 14pt;"><strong>Desarrollo de un observador de Luengerber</strong> (esto corresponde al curso de Sistemas de Control I de la maestría en Automatización y Control - UAEH).</span></li>
+</ol>
+<p><span style="font-size: 14pt;"><strong>Nota: Software de apoyo: Matlab y Lab View.</strong></span></p>
+<p>           .</p>
+<p><strong><span style="font-size: 14pt;"><span style="color: #003785;">Tarjetas de adquisición recomendadas: USB 6008-09 o PCI.</span></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">4.- Medidas de Seguridad.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ul>
+<li><span style="font-size: 14pt;"><strong>Verificar las conexiones</strong> antes de realizar las mediciones para evitar daño al equipo y a los componentes.</span></li>
+<li><span style="font-size: 14pt;">Tomar en cuenta que <strong>el sensor</strong> de posición de la banda transportadora es un <strong>potenciómetro de 10 vueltas</strong>, usted debe tomar en cuenta esto en el programa de control para no dañar el sistema de banda transportadora.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1><span style="color: #003785;">5.- Reactivos/insumos, materiales/utensilios y equipos.</span></h1>
+<hr />
+<p><img src="img3.16.png" width="1089" height="386" alt="React_insumos_p2_multi" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<h1><span style="color: #003785;">6.-Procedimiento Para el Desarrollo de la Práctica.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellspacing="20" cellpadding="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>1.</strong> </span>Para identificar el modelo de velocidad de la planta (Figura 1), realice la respuesta al escalón de la planta. El modelo de posición se obtiene introduciendo un integrador puro. Para ello utilice una fuente de CD y un osciloscopio y/o tarjeta de adquisición de datos para obtener la respuesta de la planta. El voltaje aplicado al motor generará una velocidad en estado estable, registre dicha velocidad y dicho voltaje, en esta zona de operación se hará el experimento para el control óptimo. Realice varios experimentos a distintos voltajes de excitación sobre el motor de CD de la banda y haga registro de las distintas zonas de operación de velocidad de la banda, esto para poder variar la zona de operación del control óptimo. Con este modelo en función de trasferencia realice la representación espacio estado del sistema.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>2.</strong></span> Con el modelo aproximado obtenido, realice un observador de Luengenber (para la obtención de la matriz L del observador puede hacer uso del algoritmo de Ackerman) para estimar la velocidad y poder implantar el control óptimo el cual necesita todo el vector de estado (para este sistema posición y velocidad de la banda). Valide la estimación dada por el observador comparándola con un derivador numérico de la posición y con la simulación del modelo aproximado obtenido, con condiciones iniciales iguales para el observador y el sistema y condiciones iniciales diferentes.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong><span style="color: #003785;">3.</span></strong> Implemente (en LabView) un control óptimo de horizonte finito por medio del enfoque de cálculo variacional resolviendo el sistema adjunto. La consigna de posición puede ser constante y la velocidad puede hacerse mediante una rampa con cierta pendiente positiva y luego velocidad constante con pendiente negativa hasta llegar a cero (Figura 2), todo esto debe realizarse en el tiempo tf preestablecido en el índice de desempeño. La posición deseada debe elegirse adecuadamente de acuerdo con el perfil de velocidad elegido. Si es necesario filtre la señal enviado por el potenciómetro usando un bloque de compresión en LabView.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong><span style="color: #003785;">4.</span></strong> Programe una interfaz en Labview en donde puede alterarse Q, R, tf, y el perfil de velocidad y la referencia en posición, así como desplegar el error de seguimiento, la señal de control y las variables de estado.<br /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><span style="color: #003785;"><strong>5.</strong></span> Realice un reporte anexando sus comentarios acerca de la práctica.</span><span style="font-size: 14pt;"></span><span style="font-size: 14pt;"></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;"><img src="img2.12.png" width="405" height="336" alt="fig1_p2_multivariable" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 14pt;"><img src="img3.14.png" width="530" height="273" alt="Fig2_p2_multivariable" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">7.-Cuestionario.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p></p>
+<p><span style="font-size: 14pt;">1.- ¿Cuáles son las ventajas entre el control moderno y el control clásico?, justifique su respuesta usando como ejemplo lo realizado en la práctica.<br />2.- ¿Cuáles son las ventajas de usar un observador de estado y derivador numérico?.<br />3.- Mencione desventajas del uso práctico del control óptimo.</span><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;"><span style="color: #003785;"><strong><span style="font-size: 18pt;">Conclusiones:</span></strong></span> Las anotaciones concluyentes serán realizadas individualmente por los alumnos en el reporte final.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><span style="color: #003785;">8.-Bibliografía.</span></h1>
+<hr />
+<p></p>
+<table border="1" style="width: 100%; background-color: #def7ff;" cellpadding="20" cellspacing="20">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<ol>
+<li><span style="font-size: 14pt;"><strong>Optimal Control Theory: An Introduction</strong>, Donald E. Kirk, Ed. Dover, 2004.</span></li>
+<li><span style="font-size: 14pt;"><strong>Optimal Control: An Introduction to the Theory and Its Applications</strong>, Michael Athans, Peter L. Falb, Ed. Dover, 2006.</span></li>
+<li><span style="font-size: 14pt;"><strong>The computation and theory of optimal control</strong>, Peter Dyer y S. R. McReynolds, Mathematics in Science and Eng, vol. 65, Ed. Academic Press, 1970.</span></li>
+<li><strong><span style="font-size: 14pt;">Apuntes de clase de sistemas de control II y I.</span></strong></li>
+<li><strong><span style="font-size: 14pt;">Ayuda del software LabView.</span></strong></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividad_1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
