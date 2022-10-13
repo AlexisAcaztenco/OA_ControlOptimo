@@ -1,0 +1,44 @@
+var g_avisos_pagina = 0;
+var g_avisos_numeroPaginas = 0;
+
+function obtenerAvisos(idArea){
+	if(g_avisos_pagina <= g_avisos_numeroPaginas){
+		g_avisos_pagina++;
+		var resultado = obtenerAvisos_ws(idArea, g_avisos_pagina);
+	
+		resultado.done(mostrarAvisos);
+		resultado.fail(function(data){
+			console.log(data.mensajeSistema.texto);
+			g_avisos_pagina--;
+		});
+	}
+}
+function mostrarAvisos(data){
+	var $aviso_c = $("#avisos");
+	
+	// si no hubo problema al obtener los avisos
+	if(data.avisos.registros && typeof data.avisos.registros === "object"){
+		// asigna los registros obtenidos a la variable "aviso" y el número de páginas a "g_avisos_numeroPaginas"
+		var avisos = data.avisos.registros;
+		g_avisos_numeroPaginas = data.avisos.numeroPaginas;
+		
+		// muestra la sección de avisos si se obtuvieron registros
+		if(data.avisos.numeroRegistros > 0)
+			$aviso_c.css("display", "block");
+		
+		// si la página actual es menor al total de páginas, muestra el botón "ver más",
+		// de lo contrario lo oculta
+		if(g_avisos_pagina < g_avisos_numeroPaginas)
+			$("button.btn-vermas", $aviso_c).css("display", "inline-block");
+		else
+			$("button.btn-vermas", $aviso_c).css("display", "none");
+	}
+	else{
+		return;
+	}
+	
+	// adjunta el aviso a la sección de registros de avisos
+	$.each(avisos, function(i, v){
+		$(".registros", $aviso_c).append("<li><a href='"+(v.url?v.url:"#")+"' class='link-c'>"+v.titulo+"</a></li>");
+	});
+}

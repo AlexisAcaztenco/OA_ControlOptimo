@@ -1,0 +1,89 @@
+// JavaScript Document
+
+//Menu links parte derecha  ALUMANDO, ASPIRANTES, EGRESADOS ETC
+
+function menu_sectores(valor)
+{
+  var content = valor;
+	if(content=="escuelas"){
+		newwindow=window.open("/campus/");
+		newwindow.creator=blank;
+	}
+	if(content=="calendario"){
+		newwindow=window.open("/calendario1/");
+		return;
+		//newwindow.creator=blank;
+	}
+	if(content=="reglamento"){
+		newwindow=window.open("/adminyserv/dir_generales/juridica/reglamento_escolar09.htm");
+		newwindow.creator=blank;
+	}
+	if(content=="rutas"){
+		newwindow=window.open("/transporte_universitario/index.html#rutas");
+		newwindow.creator=blank;
+	}
+	if(content=="educacion"){
+		newwindow=window.open("/adminyserv/gesuniv/div_vin/dir_educont/");
+		newwindow.creator=blank;
+	}
+	if(content=="garzashop"){
+		newwindow=window.open("/patronato/empresas/garzashop/");
+		newwindow.creator=blank;
+	}
+	if(content=="pabellon"){
+		newwindow=window.open("/pabellonuniversitario/");
+		newwindow.creator=blank;
+	}
+	if(content=="bolsa"){
+		newwindow=window.open("https://uaeh.occ.com.mx/Bolsa_Trabajo");
+		newwindow.creator=blank;
+	}
+	if(content=="pagos"){
+		newwindow=window.open("http://sistemas.uaeh.edu.mx/daf/drf/cobroweb/index.php");
+		newwindow.creator=blank;
+	}
+	if(content=="radio"){
+		newwindow=window.open("/radio/");
+		newwindow.creator=blank;
+	}
+	if(content=="legislacion"){
+		newwindow=window.open("/adminyserv/dir_generales/juridica/");
+		newwindow.creator=blank;
+	}
+	if(content=="pdi"){
+		newwindow=window.open("http://sgc.uaeh.edu.mx/planeacion/images/pdi.pdf");
+		newwindow.creator=blank;
+	}
+	if(content=="syllabus"){
+		newwindow=window.open("http://sisalt.uaeh.edu.mx/sape/sapemovil/index.php");
+		newwindow.creator=blank;
+	}
+	if(content=="syllabus2"){
+		newwindow=window.open("http://sisalt2.uaeh.edu.mx/sape/sapemovil/index.php");
+		newwindow.creator=blank;
+	}
+	if(content=="email"){
+		newwindow=window.open("https://mail.google.com/a/uaeh.edu.mx/");
+		newwindow.creator=blank;
+	}
+	if(content=="biblioteca"){
+		newwindow=window.open("http://dgsa.uaeh.edu.mx/bdigital/");
+		newwindow.creator=blank;
+	}
+} 
+		
+	/*	BOTONERA MENU - SECTORES   
+	
+		<button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="escuelas"  onClick="menu_sectores(this.value)"> <span>Escuelas e Institutos</span><i class="fa fa-university fa-lg"></i></button>             
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="calendario" onClick="menu_sectores(this.value)"> <span>Calendario Institucional</span><i class="fa fa-calendar fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="reglamento" onClick="menu_sectores(this.value)"> <span>Reglamento Escolar</span><i class="fa fa-file-o fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="rutas" onClick="menu_sectores(this.value)"> <span>Rutas del GarzaBus</span><i class="fa fa-bus fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="educacion" onClick="menu_sectores(this.value)"> <span>Educación Continua</span><i class="fa fa-user-plus fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="garzashop" onClick="menu_sectores(this.value)"> <span>GarzaShop</span><i class="fa fa-shopping-cart fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="pabellon" onClick="menu_sectores(this.value)"> <span>Pabellón Universitario</span><i class="fa fa-shopping-basket fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="bolsa" onClick="menu_sectores(this.value)"> <span>Bolsa Universitaria de Trabajo</span><i class="fa fa-briefcase fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="pagos" onClick="menu_sectores(this.value)"> <span>Pagos en línea</span><i class="fa fa-money fa-lg"></i></button>
+            <button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="radio" onClick="menu_sectores(this.value)"> <span>Radio Universidad</span><i class="fa fa-microphone fa-lg"></i></button>
+			<button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="legislacion" onClick="menu_sectores(this.value)"> <span>Legislación Universitaria</span><i class="fa fa-file fa-lg"></i></button>
+			<button type="button" style="width:100%" class="btn btn-cafe btn-lg btn-block btn-foo1" value="pdi" onClick="menu_sectores(this.value)"> <span>PDI</span><i class="fa fa-book fa-lg"></i></button>
+			*/

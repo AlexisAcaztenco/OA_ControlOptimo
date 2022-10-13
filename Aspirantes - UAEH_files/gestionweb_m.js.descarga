@@ -1,0 +1,168 @@
+// JavaScript Document
+function obtenerEventos_ws(idArea, pagina){
+	var resultado = $.ajax({
+		url:"/sistemas/gestionweb/webServices/gestionwebWs.php",
+		data:{
+			"idArea":idArea,
+			"accion":"obtenerEventos",
+			"pagina":pagina
+		},
+		type:"GET",
+		dataType:"json"
+	}).then(
+		function(data){
+			if(!(data && typeof data === "object")){
+				var r = {
+					"eventos":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener los eventos"
+					}
+				};
+				return $.Deferred().reject(r);
+			}
+			else if(!data.mensajeSistema.resultado)
+				return $.Deferred().reject(data);
+			
+			return data;
+		},
+		function(data){
+			console.log(data);
+			var r = {
+					"eventos":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener los eventos"
+					}
+				};
+			return r;
+		}
+	);
+	
+	return resultado;
+}
+function obtenerAvisos_ws(idArea, pagina){
+	var resultado = $.ajax({
+		url:"/sistemas/gestionweb/webServices/gestionwebWs.php",
+		data:{
+			"idArea":idArea,
+			"accion":"obtenerAvisos",
+			"pagina":pagina
+		},
+		type:"GET",
+		dataType:"json"
+	}).then(
+		function(data){
+			if(!(data && typeof data === "object")){
+				var r = {
+					"avisos":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener los avisos"
+					}
+				};
+				return $.Deferred().reject(r);
+			}
+			else if(!data.mensajeSistema.resultado)
+				return $.Deferred().reject(data);
+			
+			return data;
+		},
+		function(data){
+			console.log(data);
+			var r = {
+					"avisos":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener los avisos"
+					}
+				};
+			return r;
+		}
+	);
+	
+	return resultado;
+}
+function obtenerConvocatorias_ws(idArea, pagina){
+	var resultado = $.ajax({
+		url:"/sistemas/gestionweb/webServices/gestionwebWs.php",
+		data:{
+			"idArea":idArea,
+			"accion":"obtenerConvocatorias",
+			"pagina":pagina
+		},
+		type:"GET",
+		dataType:"json"
+	}).then(
+		function(data){
+			if(!(data && typeof data === "object")){
+				var r = {
+					"convocatorias":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener las convocatorias"
+					}
+				};
+				return $.Deferred().reject(r);
+			}
+			else if(!data.mensajeSistema.resultado)
+				return $.Deferred().reject(data);
+			
+			return data;
+		},
+		function(data){
+			console.log(data);
+			var r = {
+					"convocatorias":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener las convocatorias"
+					}
+				};
+			return r;
+		}
+	);
+	
+	return resultado;
+}
+
+function obtenerImagenesTransicion_ws(idArea){
+	var resultado = $.ajax({
+		url:"/sistemas/gestionweb/webServices/gestionwebWs.php",
+		data:{
+			"idArea":idArea,
+			"accion":"obtenerImagenesTransicion"
+		},
+		type:"GET",
+		dataType:"json"
+	}).then(
+		function(data){
+			if(!(data && typeof data === "object")){
+				var r = {
+					"imagenesTransicion":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener las imágenes de transición"
+					}
+				};
+				
+				return $.Deferred().reject(r);
+			}
+			else if(!data.mensajeSistema.resultado)
+				return $.Deferred().reject(data);
+			return data;
+		},
+		function(data){
+			console.log(data);
+			var r = {
+					"imagenesTransicion":null,
+					"mensajeSistema":{
+						"resultado":false,
+						"texto":"Hubo un error al intentar obtener las imágenes de transición"
+					}
+				};
+			return r;
+		}
+	);
+	return resultado;
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	/*overflow: hidden;*/
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+ 
+	
+}
+.sidebarUAEH{	
+	position: absolute;
+	width: 200px;
+	height: 495px;
+	background: #706A5C;
+	color: #fff;
+	/*outline: 1px solid #625C51;*/
+	
+	
+	
+}
+.sidebarUAEH h2{
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background: #625C51;
+	
+}
+.sidebarUAEH ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	
+}
+.sidebarUAEH li{ 
+	outline:1px solid #625C51;
+	transition: all 0.3s;
+	font-size: 14px;
+
+}
+.sidebarUAEH li:hover{
+	background: #9C9687;
+	border-left: 5px solid #EAE3D8;
+}
+.sidebarUAEH a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+	
+	
+	
+.conten-all{ 
+	width:100%;
+	/*height:100%;*/
+	position:absolute;
+	background:#FFF; /*#EAE3D8*/
+	padding:0;
+	transition: all 0.3s;
+	
+}
+
+.sidemenu-bar{ 
+	cursor:pointer;
+	padding:5px;
+}
+
+.abrirSideBar{
+	transform:translateX(200px);
+	-webkit-transform:translateX(200px);
+	-ms-transform:translateX(200px);
+	
+}
+/* Animacion de icono hamburguesa  */
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+	-webkit-transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+  	transform: rotate(45deg);
+  	transform-origin: 10% 10%;
+	-ms-transform: rotate(45deg);
+	-ms-transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+ 	 transform: rotate(-45deg);
+  	transform-origin: 10% 90%;
+  	-ms-transform: rotate(-45deg);
+	-ms-transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+}
+
+
+/* Efecto hamburguesa desde link  */
+.sidebtn {
+	position: relative;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+.sidebtn span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.sidebtn span:before, .sidebtn span:after {
+	position: absolute;
+	content: '';
+}
+.sidebtn span, .sidebtn span:before, .sidebtn span:after {
+	width: 30px;
+	height: 4px;
+	background-color:#FFF;
+	display: block;
+}
+.sidebtn span:before {
+	margin-top: -12px;
+}
+.sidebtn span:after {
+	margin-top: 12px;
+}
+
+.sidebtn.btn-gira span{
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); 
+	-ms-transform: rotate(0deg);
+	-webkit-transition: 0.5s ease; 
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.sidebtn span{
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg); 
+	-ms-transform: rotate(90deg);
+	-webkit-transition: 0.5s ease; 
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+
+/* Efecto hamburguesa desde link  2 */
+.sidebtn2 {
+	position: relative;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+.sidebtn2 span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.sidebtn2 span:before, .sidebtn2 span:after {
+	position: absolute;
+	content: '';
+}
+.sidebtn2 span, .sidebtn2 span:before, .sidebtn2 span:after {
+	width: 30px;
+	height: 4px;
+	background-color:#FFF;
+	display: block;
+}
+.sidebtn2 span:before {
+	margin-top: -12px;
+}
+.sidebtn2 span:after {
+	margin-top: 12px;
+}
+
+/****/
+.sidebtn2 span{
+	-webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.sidebtn2.btn-gira span{
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.sidebtn2 span:before {
+	margin-top: 0;
+	-webkit-transform: rotate(-22.5deg) skewX(-22.5deg); transform: rotate(-22.5deg) skewX(-22.5deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	
+	
+	
+}
+.sidebtn2.btn-gira span:before{
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+	-webkit-transform-origin: 0% 0%; transform-origin: 0% 0%;
+}
+
+
+.sidebtn2 span:after {
+	margin-top: 0;
+	-webkit-transform: rotate(22.5deg) skewX(22.5deg); transform: rotate(22.5deg) skewX(22.5deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	
+	
+	
+	
+	
+}
+
+
+.sidebtn2.btn-gira span:after {
+	
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+	-webkit-transform-origin: 0% 100%; transform-origin: 0% 100%;
+}
+
+#btn-busqueda2,#btn-idioma2{margin-top:8px;}

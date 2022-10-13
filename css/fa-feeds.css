@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.facebookfeed { background:#EAE3D8; font-size:13px; color:#706A5C; text-align:center;}
+a.fblink[title]:link, a.fblink[title]:visited  { text-decoration:none; color:#706A5C; font-weight:normal;}
+a.fblink[title]:hover, a.fblink[title]:active {text-decoration:underline; color:#706A5C; font-weight:normal;}
+
+.textlink a:link, .textlink a:visited  { text-decoration:none; color:#9F4542; font-weight:bold;}
+.textlink a:hover, .textlink a:active {text-decoration:underline; color:#9F4542; font-weight:bold;}
+
+.f-style {color:#EAE3D8;}
+.post-txt{margin:5px auto;}
+
+.btn_mas{padding:20px; padding-top:30px;}

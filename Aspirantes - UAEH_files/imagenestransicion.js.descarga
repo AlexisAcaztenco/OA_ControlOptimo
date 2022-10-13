@@ -1,0 +1,49 @@
+function obtenerImagenesTransicion(idArea){
+	var resultado = obtenerImagenesTransicion_ws(idArea);
+	
+	resultado.done(mostrarImagenesTransicion);
+	resultado.fail(function(data){
+		console.log(data.mensajeSistema.texto);
+	});
+}
+function mostrarImagenesTransicion(data){
+	var $imagenes_c = $("#myCarousel");
+	var $indicadores = $("ol.carousel-indicators", $imagenes_c);
+	var $imagenes = $(".carousel-inner", $imagenes_c);
+	
+	$indicadores.empty();
+	$imagenes.empty();
+	
+	if(data.imagenesTransicion.registros && typeof data.imagenesTransicion.registros === "object")
+		var imagenes = data.imagenesTransicion.registros;
+	else
+		return;
+	
+	
+	$.each(imagenes, function(i, v){
+		// indicadores ó los puntos que la hacen de paginadores, en la parte inferior del carousel
+		$indicadores.append("<li data-target='#myCarousel' data-slide-to='"+i+"'"+(i===0?" class='active'":"")+"></li>");
+		
+		// contenido del carousel
+		$imagenes.append(
+				'<div class="item'+(i===0?' active':'')+'">'+
+					'<a href="'+((v.url && v.url!=="")?v.url:"#")+'" class="link-b">'+
+						'<img src="'+v.foto_url+'" data-src="" style="width:100%" alt="'+v.titulo+'" class="img-responsive">'+
+					'</a>'+
+					'<div class="container">'+
+						'<div class="carousel-caption">'+
+							'<a href="'+((v.url && v.url!=="")?v.url:"#")+'" class="link-b" style="color:#fff">'+'<h1 class="titulo_carrusel hidden-xss" style="text-shadow: 8px 2px 8px #000;">'+((v.titulo && v.titulo !== "")?v.titulo:"")+'</h1>'+
+							'<div class="hidden-xs" style="text-shadow: 8px 2px 8px #000;">'+((v.descripcion && v.descripcion !== "")?v.descripcion:"")+'</div></a>'+
+						'</div>'+
+					'</div>'+
+				'</div>');
+	});
+	
+	
+	// inicializa el carousel
+	$imagenes_c.carousel(
+		{
+			interval:10000
+		}
+	);
+}
